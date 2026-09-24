@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Estudos de layout · UFABC Next</title>
+    <link rel="stylesheet" href="layouts.css" />
+    <script src="layouts.js" defer></script>
+  </head>
+  <body>
+    <nav class="layout-switcher" aria-label="Escolha um estudo de layout">
+      <strong>Estudos 1080p</strong>
+      <a href="?layout=1" data-layout-link="1">01 · Hero dividido</a>
+      <a href="?layout=2" data-layout-link="2">02 · Placar editorial</a>
+      <a href="?layout=3" data-layout-link="3">03 · Campanha imersiva</a>
+    </nav>
+
+    <main class="screen layout-one" data-layout="1">
+      <header class="topbar">
+        <div class="brand">ufabc <b>next <i>▶▶</i></b></div>
+        <div class="event">SEMANA DA COMPUTAÇÃO <span>•</span> AO VIVO</div>
+        <div class="live">ATUALIZANDO AO VIVO <i></i></div>
+      </header>
+      <section class="one-grid">
+        <div class="one-copy">
+          <p class="eyebrow">COMENTE. CONTRIBUA. CONCORRA.</p>
+          <h1>Faça uma review<br />no Next e concorra a uma <em>Hack the Future.</em></h1>
+          <div class="one-count">
+            <strong>47</strong>
+            <span>comentários<br />hoje</span>
+          </div>
+          <div class="goal-line">
+            <div><b>Nossa meta coletiva</b><span>47 / 100</span></div>
+            <div class="track"><i></i></div>
+            <p>Faltam 53 comentários para a meta.</p>
+          </div>
+        </div>
+        <figure class="one-product">
+          <div class="number">#01</div>
+          <img src="camisa-next.jpg" alt="Camiseta Hack the Future" />
+          <figcaption>
+            <span>EDIÇÃO LIMITADA</span>
+            <b>A próxima pode ser sua.</b>
+          </figcaption>
+        </figure>
+      </section>
+      <footer>Uma avaliação cuidadosa vale mais que várias apressadas.</footer>
+    </main>
+
+    <main class="screen layout-two" data-layout="2" hidden>
+      <header class="topbar dark">
+        <div class="brand">ufabc <b>next <i>▶▶</i></b></div>
+        <div class="live">ATUALIZANDO AO VIVO <i></i></div>
+      </header>
+      <section class="two-grid">
+        <div class="two-heading">
+          <p class="eyebrow">SEMANA DA COMPUTAÇÃO</p>
+          <h1>Sua review<br />vale o futuro.</h1>
+          <p class="lead">Compartilhe sua experiência no Next e concorra à camiseta exclusiva <b>Hack the Future.</b></p>
+          <div class="cta">O próximo comentário pode ser o seu <span>→</span></div>
+        </div>
+        <div class="score-card">
+          <p>COMENTÁRIOS DE HOJE</p>
+          <strong>47</strong>
+          <small>Última atualização às 14:32</small>
+          <div class="goal-line inverse">
+            <div><b>Meta coletiva</b><span>47%</span></div>
+            <div class="track"><i></i></div>
+            <p>47 de 100 comentários</p>
+          </div>
+        </div>
+        <figure class="two-product">
+          <img src="camisa-next.jpg" alt="Camiseta Hack the Future" />
+          <figcaption><b>Hack the Future</b><span>creme + azul · edição limitada</span></figcaption>
+        </figure>
+      </section>
+    </main>
+
+    <main class="screen layout-three" data-layout="3" hidden>
+      <div class="three-photo" aria-hidden="true"></div>
+      <div class="three-content">
+        <header class="topbar transparent">
+          <div class="brand">ufabc <b>next <i>▶▶</i></b></div>
+          <div class="event">SEMANA DA COMPUTAÇÃO</div>
+          <div class="live">AO VIVO <i></i></div>
+        </header>
+        <section class="three-hero">
+          <div class="limited">EDIÇÃO<br />LIMITADA <span>01—30</span></div>
+          <p class="eyebrow">FAÇA UMA REVIEW NO NEXT</p>
+          <h1>Concorra a uma<br /><em>Hack the Future.</em></h1>
+          <div class="three-score">
+            <div><strong>47</strong><span>comentários<br />hoje</span></div>
+            <div class="goal-line inverse">
+              <div><b>Meta coletiva</b><span>47 / 100</span></div>
+              <div class="track"><i></i></div>
+              <p>Faltam 53 comentários.</p>
+            </div>
+          </div>
+        </section>
+        <footer>O próximo comentário pode ser o seu. <b>Compartilhe uma experiência útil.</b></footer>
+      </div>
+    </main>
+  </body>
+</html>
